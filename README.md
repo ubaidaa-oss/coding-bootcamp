@@ -1,6 +1,6 @@
 # Frontend Mentor - Coding bootcamp testimonials slider
 
-![Design preview for the Coding bootcamp testimonials slider coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Coding bootcamp testimonials slider coding challenge](https://github.com/ubaidaa-oss/coding-bootcamp/blob/main/assets/design/desktop-preview.jpg?raw=true)
 
 ## Welcome! 👋
 

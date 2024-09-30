@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Dark-Blue: hsl(240, 38%, 20%);
+    --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+body {
+    font-family: 'inter', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    height: 100vh;
+    width: 90%;
+    display: flex;
+    /* align-items: center; */
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 100px;
+    gap: 30px;
+    height: 90%;
+    width: 50%;
+    /* position: relative; */
+
+}
+
+.desc {
+    font-size: 2.3rem;
+
+    position: absolute;
+    top: 40%;
+    /* top: ; */
+    z-index: 3;
+    width: 60%;
+    color: var(--Dark-Blue);
+    font-weight: 300;
+    line-height: 1.5;
+    /* overflow: visible; */
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+}
+
+.name h2 {
+    color: var(--Dark-Blue);
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 0px 0px 2px var(--Dark-Blue);
+}
+
+.jobTitle h2 {
+    color: var(--Grayish-Blue);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.imgs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    width: 50%;
+}
+
+.pattern {
+    position: absolute;
+    z-index: 0;
+    height: 70%;
+}
+
+.pattern img {
+    /* height: 100%; */
+    /* width: 100%; */
+}
+
+.person {
+    border-radius: 6px;
+    width: 80%;
+    z-index: 1;
+    height: 65%;
+    position: relative;
+    box-shadow: 0px 20px 20px hsla(240, 37%, 20%, 0.479);
+}
+
+.person img {
+    width: 100%;
+    height: 100%;
+}
+.btns{
+    width: 100%;
+    position: absolute;
+    padding-inline: 50px;
+    bottom: -20px;
+    left: 0px;
+}
+.btnsChild {
+    display: flex;
+    background-color: #f5f5f5;
+    height: 50px;
+    width: 35%;
+    border-radius: 25px;
+}
+
+.prev,
+.next {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+.prev img,
+.next img {
+    width: 20%;
+    height: 40%;
+}
+
+.imgNew {
+    position: absolute;
+    top: 34%;
+    left: 160px;
+}
+
+.overlay {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+@media(max-width:1040px) {
+    .main {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .overlay {
+        /* display: none; */
+        width: 100%;
+        bottom: -100px;
+
+    }
+    .overlay img{
+        width: 100%;
+    }
+
+    .text {
+        /* display: none; */
+    }
+
+    .imgs {
+        height: 60vh;
+        width: 100%;
+    }
+
+    .pattern {
+        height: 90%;
+        width: 90%;
+    }
+
+    .pattern img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .desc {
+        font-size: 1.3rem;
+        text-align: center;
+        position: unset;
+        width: 100%;
+    }
+
+    .text {
+        height: auto;
+        width: 100%;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+    .name h2{
+text-shadow: none;font-size: 1rem;
+    }
+    .jobTitle h2 {
+font-size: 1rem;
+    }
+    .btns{
+        padding-inline: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*  */
+}
+@media(max-width:280px)
+{
+    .overlay{
+        bottom: -137px;
+    }
+}
